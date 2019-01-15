@@ -7,7 +7,7 @@ int main()
     int qian = 0;
     int cun;
     int qu;
-    int yue;
+
     while (1)
     {
         int code = 0;
@@ -38,7 +38,7 @@ int main()
             if (qu <= qian)
             {
                 printf("取钱成功，点击回车继续\n");
-                yue = qian - qu;
+                qian-=qu;
             }
             else
             {
@@ -51,7 +51,7 @@ int main()
         if (code == 3)
         {
             char x;
-            printf("您的余额为%d\n", yue);
+            printf("您的余额为%d\n", qian);
             printf("点击回车继续\n");
             scanf("%c", &x);
             scanf("%c", &x);
