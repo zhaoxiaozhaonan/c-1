@@ -50,12 +50,17 @@ int main()
 
         if (code == 3)
         {
-            /* code */
+            char x;
+            printf("您的余额为%d\n", yue);
+            printf("点击回车继续\n");
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
 
         if (code == 4)
         {
-            /* code */
+            printf("点击回车，退出系统\n");
+            break;
         }
     }
 
