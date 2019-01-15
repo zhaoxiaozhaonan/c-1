@@ -1,9 +1,14 @@
 #include <stdio.h>
 
-int main(){
+int main()
+{
 
     printf("进入存钱取钱管理系统\n");
-      while (1)
+    int qian = 0;
+    int cun;
+    int qu;
+    int yue;
+    while (1)
     {
         int code = 0;
         printf("1--存钱\n");
@@ -13,28 +18,32 @@ int main(){
         printf("请输入所需项目符号\n");
         scanf("%d", &code);
 
-        
-        if (code==1) {
+        if (code == 1)
+        {
+            char x;
+            printf("请输入要存入的金额\n");
+            scanf("%d", &cun);
+            qian += cun;
+            printf("存钱成功，点击回车继续\n");
+            scanf("%c", &x);
+            scanf("%c", &x);
+        }
+
+        if (code == 2)
+        {
             /* code */
         }
-        
-        if (code==2) {
+
+        if (code == 3)
+        {
             /* code */
         }
-        
-        if (code==3) {
+
+        if (code == 4)
+        {
             /* code */
         }
-        
-        if (code==4) {
-            /* code */
-        }
-        
-        
-        
-        
     }
 
     return 0;
-
 }
