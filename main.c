@@ -31,7 +31,21 @@ int main()
 
         if (code == 2)
         {
-            /* code */
+            char x;
+            printf("请输入要取出的金额\n");
+            scanf("%d", &qu);
+
+            if (qu <= qian)
+            {
+                printf("取钱成功，点击回车继续\n");
+                yue = qian - qu;
+            }
+            else
+            {
+                printf("取钱失败，点击回车继续\n");
+            }
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
 
         if (code == 3)
